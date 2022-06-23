@@ -1,9 +1,16 @@
+
+- name: install epel-release
+  yum:
+    name: epel-release
+    state: present
+    
+- name: makecache
+  shell:
+    name: yum makecache 
+  
 - name: install pip
   yum:
-    name: 
-      - epel-release
-      - makecache
-      - python-pip
+    name: python-pip
     state: present
 
 - name: pip install docker-py
