@@ -6,7 +6,7 @@
     
 - name: makecache
   yum:
-    name: makecache 
+    name: yum makecache 
   
 - name: install pip
   yum:
