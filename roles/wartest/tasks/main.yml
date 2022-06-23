@@ -5,7 +5,7 @@
     state: present
     
 - name: makecache
-  shell:
+  command:
     name: yum makecache 
   
 - name: install pip
